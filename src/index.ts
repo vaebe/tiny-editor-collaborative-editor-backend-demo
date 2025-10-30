@@ -7,6 +7,7 @@ import {
   MongoPersistence,
   setupWSConnection,
 } from '@vaebe/collaborative-editor-backend'
+import pc from "picocolors"
 
 const server = http.createServer((_request, response) => {
   response.writeHead(200, { 'Content-Type': 'text/plain' })
@@ -40,7 +41,7 @@ persistence
   .connect()
   .then(() => {
     server.listen(PORT, HOST, () => {
-      console.warn(`Server running on http://${HOST}:${PORT}`)
+      console.log(pc.green(`Server running on http://${HOST}:${PORT}`))
     })
   })
   .catch((error) => {
