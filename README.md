@@ -49,4 +49,4 @@ docker run -d --name yjs-mongodb --restart always -p 27017:27017 \
 pnpm run dev
 ```
 
-服务启动后，您可以通过 WebSocket 连接进行协同编辑。请确保您的客户端已正确配置，以便与后端进行通信。
+上述配置服务启动后的客户端的连接地址为 `ws://localhost:1234`
