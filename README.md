@@ -39,6 +39,15 @@ docker run -d --name yjs-mongodb --restart always -p 27017:27017 \
   GC=true
   ```
 
+| 变量名               | 必需 | 默认值 | 说明                  |
+| -------------------- | ---- | ------ | --------------------- |
+| `HOST`               | ✅   | -      | 服务器监听地址        |
+| `PORT`               | ✅   | -      | WebSocket 服务端口    |
+| `MONGODB_URL`        | ✅   | -      | MongoDB 连接字符串    |
+| `MONGODB_DB`         | ✅   | -      | MongoDB 数据库名称    |
+| `MONGODB_COLLECTION` | ✅   | -      | MongoDB 集合名称      |
+| `GC`                 | ❌   | `true` | 是否启用 Yjs 垃圾回收 |
+
 ## 集成
 
 参考 [src/index.ts](https://github.com/vaebe/tiny-editor-collaborative-editor-backend-demo/blob/main/src/index.ts) 完成 [tiny-editor](https://opentiny.github.io/tiny-editor/docs/demo/collaborative-editing) 协同编辑后端 npm 包后端的集成
