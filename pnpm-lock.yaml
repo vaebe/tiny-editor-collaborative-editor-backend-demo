@@ -8,9 +8,9 @@ importers:
 
   .:
     dependencies:
-      '@vaebe/collaborative-editor-backend':
-        specifier: ^0.0.2
-        version: 0.0.2
+      '@opentiny/tiny-editor-collaborative-editing-backend':
+        specifier: ^0.0.1
+        version: 0.0.1
       ws:
         specifier: ^8.18.3
         version: 8.18.3
@@ -189,6 +189,9 @@ packages:
   '@mongodb-js/saslprep@1.3.2':
     resolution: {integrity: sha512-QgA5AySqB27cGTXBFmnpifAi7HxoGUeezwo6p9dI03MuDB6Pp33zgclqVb6oVK3j6I9Vesg0+oojW2XxB59SGg==}
 
+  '@opentiny/tiny-editor-collaborative-editing-backend@0.0.1':
+    resolution: {integrity: sha512-EtFC/miUG+L4IUaiUmVCywtitCXZ8v4PpC8rHaOGoc6FvQVW3CJPVrd4TPba/1VRVOnO0MCrcrvI9Hxbo+vNtw==}
+
   '@rollup/rollup-android-arm-eabi@4.52.5':
     resolution: {integrity: sha512-8c1vW4ocv3UOMp9K+gToY5zL2XiiVw3k7f1ksf4yO1FlDFQ1C2u72iACFnSOceJFsWskc2WZNqeRhFRPzv+wtQ==}
     cpu: [arm]
@@ -313,9 +316,6 @@ packages:
 
   '@types/ws@8.18.1':
     resolution: {integrity: sha512-ThVF6DCVhA8kUGy+aazFQ4kXQ7E1Ty7A3ypFOe0IcJV8O/M511G99AW24irKrW56Wt44yG9+ij8FaqoBGkuBXg==}
-
-  '@vaebe/collaborative-editor-backend@0.0.2':
-    resolution: {integrity: sha512-9GC7TnhIUaiHVxnbl2TydHvuMz1e1pvVhMv/9UK8Omsqf7wKRhYDe19nGOdawRFGfHSsgw9JQ+hJIT/hZ9CYUg==}
 
   '@y/protocols@1.0.6-1':
     resolution: {integrity: sha512-6hyVR4Azg+JVqeyCkPQMsg9BMpB7fgAldsIDwb5EqJTPLXkQuk/mqK/j0rvIZUuPvJjlYSDBIOQWNsy92iXQsQ==}
@@ -610,6 +610,25 @@ snapshots:
     dependencies:
       sparse-bitfield: 3.0.3
 
+  '@opentiny/tiny-editor-collaborative-editing-backend@0.0.1':
+    dependencies:
+      '@y/protocols': 1.0.6-1(yjs@13.6.27)
+      lib0: 0.2.114
+      mongodb: 6.20.0
+      ws: 8.18.3
+      y-mongodb-provider: 0.2.1(yjs@13.6.27)
+      yjs: 13.6.27
+    transitivePeerDependencies:
+      - '@aws-sdk/credential-providers'
+      - '@mongodb-js/zstd'
+      - bufferutil
+      - gcp-metadata
+      - kerberos
+      - mongodb-client-encryption
+      - snappy
+      - socks
+      - utf-8-validate
+
   '@rollup/rollup-android-arm-eabi@4.52.5':
     optional: true
 
@@ -691,25 +710,6 @@ snapshots:
   '@types/ws@8.18.1':
     dependencies:
       '@types/node': 24.9.2
-
-  '@vaebe/collaborative-editor-backend@0.0.2':
-    dependencies:
-      '@y/protocols': 1.0.6-1(yjs@13.6.27)
-      lib0: 0.2.114
-      mongodb: 6.20.0
-      ws: 8.18.3
-      y-mongodb-provider: 0.2.1(yjs@13.6.27)
-      yjs: 13.6.27
-    transitivePeerDependencies:
-      - '@aws-sdk/credential-providers'
-      - '@mongodb-js/zstd'
-      - bufferutil
-      - gcp-metadata
-      - kerberos
-      - mongodb-client-encryption
-      - snappy
-      - socks
-      - utf-8-validate
 
   '@y/protocols@1.0.6-1(yjs@13.6.27)':
     dependencies:

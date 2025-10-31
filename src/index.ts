@@ -6,7 +6,7 @@ import {
   setPersistence,
   MongoPersistence,
   setupWSConnection,
-} from '@vaebe/collaborative-editor-backend'
+} from '@opentiny/tiny-editor-collaborative-editing-backend'
 import pc from "picocolors"
 
 const server = http.createServer((_request, response) => {

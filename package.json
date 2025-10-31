@@ -15,7 +15,7 @@
     "vite-node": "^3.2.4"
   },
   "dependencies": {
-    "@vaebe/collaborative-editor-backend": "^0.0.2",
+    "@opentiny/tiny-editor-collaborative-editing-backend": "^0.0.1",
     "ws": "^8.18.3"
   }
 }
