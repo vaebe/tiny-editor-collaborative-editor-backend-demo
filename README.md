@@ -4,7 +4,7 @@
 
 ## 安装依赖
 
-1. 执行 `pnpm i @opentiny/collaborative-editor-backend` 安装协同编辑后端 npm 包。
+1. 执行 `pnpm i @opentiny/tiny-editor-collaborative-editing-backend` 安装协同编辑后端 npm 包。
 2. 执行 `pnpm i ws` 安装 WebSocket 服务器的包（yjs 通过 WebSocket 与客户端通信）。
 3. 如果您使用 TypeScript，还需要安装 `pnpm i @types/ws -D`。
 
